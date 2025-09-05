@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Canciones</title>
+</head>
+<body>
+    <h1>🎵 Canciones registradas</h1>
+    <ul>
+        {% for cancion in canciones %}
+            <li>
+                <strong>{{ cancion.titulo }}</strong> - 
+                {{ cancion.artista.nombre }} ({{ cancion.fecha_lanzamiento|default:"Sin fecha" }})
+            </li>
+        {% empty %}
+            <li>No hay canciones registradas.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Artistas</title>
+</head>
+<body>
+    <h1>🎵 Artistas</h1>
+    <ul>
+        {% for artista in artistas %}
+            <li>
+                <strong>{{ artista.nombre }}</strong> - 
+                {{ artista.nombre }} ({{ artista.fecha_nacimiento|default:"Sin fecha" }})
+            </li>
+        {% empty %}
+            <li>No hay artistas registrados.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
