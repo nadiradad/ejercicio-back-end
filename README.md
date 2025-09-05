@@ -10,4 +10,4 @@ Este es un proyecto de ejemplo en Django con dos aplicaciones: `cancion` y `arti
 ## Instalación
 1. Clonar el repositorio:
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone <https://github.com/nadiradad/ejercicio-back-end>
